@@ -1,0 +1,52 @@
+{
+    "name":"staljaard/mongogento-module",
+    "type":"magento-module",
+    "license":"OSL-3.0",
+    "homepage":"",
+    "description":"Mongogento module",
+    "authors":[
+        {
+            "name":"Shem Taljaard",
+            "email":"shem.taljaard@gmail.com"
+        }
+    ],
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    },
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento-hackathon/magento-composer-installer"
+        },
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        }
+    ],
+    "extra":{
+        "map":[
+            ["src/app/code/community/Smile/MongoCatalog/etc/config.xml","src/app/code/community/Smile/MongoCatalog/etc/config.xml"],
+	    ["src/app/code/community/Smile/MongoCatalog/Model/Import/Entity/Product.php","src/app/code/community/Smile/MongoCatalog/Model/Import/Entity/Product.php"],
+	    ["src/app/code/community/Smile/MongoCatalog/Model/Observer.php","src/app/code/community/Smile/MongoCatalog/Model/Observer.php"],
+	    ["src/app/code/community/Smile/MongoCatalog/Model/Override/Catalog/Product/Attribute/Backend/Media.php","src/app/code/community/Smile/MongoCatalog/Model/Override/Catalog/Product/Attribute/Backend/Media.php"],
+	    ["src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Product/Action.php","src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Product/Action.php"],
+	    ["src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Product/Attribute/Backend/Media.php","src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Product/Attribute/Backend/Media.php"],
+	    ["src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Product/Collection.php","src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Product/Collection.php"],
+	    ["src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Product.php","src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Product.php"],
+	    ["src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Url.php","src/app/code/community/Smile/MongoCatalog/Model/Resource/Override/Catalog/Url.php"],
+	    ["src/app/code/community/Smile/MongoCatalogImport/etc/config.xml","src/app/code/community/Smile/MongoCatalogImport/etc/config.xml"],
+	    ["src/app/code/community/Smile/MongoCore/etc/config.xml","src/app/code/community/Smile/MongoCore/etc/config.xml"],
+	    ["src/app/code/community/Smile/MongoCore/Model/Resource/Connection/Adapter.php","src/app/code/community/Smile/MongoCore/Model/Resource/Connection/Adapter.php"],
+	    ["src/app/code/community/Smile/MongoCore/Model/Resource/Connection/Query/Builder.php","src/app/code/community/Smile/MongoCore/Model/Resource/Connection/Query/Builder.php"],
+	    ["src/app/code/community/Smile/MongoSearch/etc/config.xml","src/app/code/community/Smile/MongoSearch/etc/config.xml"],
+	    ["src/app/code/community/Smile/MongoSearch/Model/Resource/Override/CatalogSearch/Fulltext.php","src/app/code/community/Smile/MongoSearch/Model/Resource/Override/CatalogSearch/Fulltext.php"],
+	    ["src/app/code/community/Smile/MongoSearch/Model/Resource/Override/EnterpriseCatalogSearch/Index/Action/Fulltext/Refresh.php","src/app/code/community/Smile/MongoSearch/Model/Resource/Override/EnterpriseCatalogSearch/Index/Action/Fulltext/Refresh.php"],
+	    ["src/app/code/community/Smile/MongoSearch/Model/Resource/Product.php","src/app/code/community/Smile/MongoSearch/Model/Resource/Product.php"],
+	    ["src/app/etc/modules/Smile_MongoCatalog.xml","src/app/etc/modules/Smile_MongoCatalog.xml"],
+	    ["src/app/etc/modules/Smile_MongoCatalogImport.xml","src/app/etc/modules/Smile_MongoCatalogImport.xml"],
+	    ["src/app/etc/modules/Smile_MongoCore.xml","src/app/etc/modules/Smile_MongoCore.xml"],
+	    ["src/app/etc/modules/Smile_MongoSearch.xml","src/app/etc/modules/Smile_MongoSearch.xml"],
+	    ["src/app/etc/mongogento.xml.template","src/app/etc/mongogento.xml.template"]
+        ]
+    }
+}
